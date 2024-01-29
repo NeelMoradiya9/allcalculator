@@ -13,6 +13,13 @@
 		18A7F4CF2AFCB77E004A1604 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18A7F4CD2AFCB77E004A1604 /* Main.storyboard */; };
 		18A7F4D12AFCB77F004A1604 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18A7F4D02AFCB77F004A1604 /* Assets.xcassets */; };
 		18A7F4D42AFCB77F004A1604 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18A7F4D22AFCB77F004A1604 /* LaunchScreen.storyboard */; };
+		18A7F4DC2AFCBB1B004A1604 /* mutualfundcal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A7F4DB2AFCBB1B004A1604 /* mutualfundcal.swift */; };
+		18A7F4DE2AFCBB2B004A1604 /* InterestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A7F4DD2AFCBB2B004A1604 /* InterestViewController.swift */; };
+		18A7F4E02AFCBB40004A1604 /* DiscountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A7F4DF2AFCBB40004A1604 /* DiscountViewController.swift */; };
+		18A7F4E22AFCBB63004A1604 /* emiviewcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A7F4E12AFCBB63004A1604 /* emiviewcon.swift */; };
+		18A7F4E42AFCBB73004A1604 /* SchoolResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A7F4E32AFCBB73004A1604 /* SchoolResultViewController.swift */; };
+		18A7F4E62AFCBB87004A1604 /* SquareorHourViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A7F4E52AFCBB87004A1604 /* SquareorHourViewController.swift */; };
+		18A7F4E82AFD04C1004A1604 /* allcalculatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A7F4E72AFD04C1004A1604 /* allcalculatorViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +31,13 @@
 		18A7F4D02AFCB77F004A1604 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		18A7F4D32AFCB77F004A1604 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		18A7F4D52AFCB77F004A1604 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18A7F4DB2AFCBB1B004A1604 /* mutualfundcal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mutualfundcal.swift; sourceTree = "<group>"; };
+		18A7F4DD2AFCBB2B004A1604 /* InterestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterestViewController.swift; sourceTree = "<group>"; };
+		18A7F4DF2AFCBB40004A1604 /* DiscountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscountViewController.swift; sourceTree = "<group>"; };
+		18A7F4E12AFCBB63004A1604 /* emiviewcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = emiviewcon.swift; sourceTree = "<group>"; };
+		18A7F4E32AFCBB73004A1604 /* SchoolResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolResultViewController.swift; sourceTree = "<group>"; };
+		18A7F4E52AFCBB87004A1604 /* SquareorHourViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SquareorHourViewController.swift; sourceTree = "<group>"; };
+		18A7F4E72AFD04C1004A1604 /* allcalculatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = allcalculatorViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +74,13 @@
 				18A7F4C92AFCB77E004A1604 /* SceneDelegate.swift */,
 				18A7F4CB2AFCB77E004A1604 /* ViewController.swift */,
 				18A7F4CD2AFCB77E004A1604 /* Main.storyboard */,
+				18A7F4E72AFD04C1004A1604 /* allcalculatorViewController.swift */,
+				18A7F4E52AFCBB87004A1604 /* SquareorHourViewController.swift */,
+				18A7F4E32AFCBB73004A1604 /* SchoolResultViewController.swift */,
+				18A7F4E12AFCBB63004A1604 /* emiviewcon.swift */,
+				18A7F4DD2AFCBB2B004A1604 /* InterestViewController.swift */,
+				18A7F4DF2AFCBB40004A1604 /* DiscountViewController.swift */,
+				18A7F4DB2AFCBB1B004A1604 /* mutualfundcal.swift */,
 				18A7F4D02AFCB77F004A1604 /* Assets.xcassets */,
 				18A7F4D22AFCB77F004A1604 /* LaunchScreen.storyboard */,
 				18A7F4D52AFCB77F004A1604 /* Info.plist */,
@@ -138,7 +159,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18A7F4E62AFCBB87004A1604 /* SquareorHourViewController.swift in Sources */,
 				18A7F4CC2AFCB77E004A1604 /* ViewController.swift in Sources */,
+				18A7F4E22AFCBB63004A1604 /* emiviewcon.swift in Sources */,
+				18A7F4E42AFCBB73004A1604 /* SchoolResultViewController.swift in Sources */,
+				18A7F4E02AFCBB40004A1604 /* DiscountViewController.swift in Sources */,
+				18A7F4DC2AFCBB1B004A1604 /* mutualfundcal.swift in Sources */,
+				18A7F4E82AFD04C1004A1604 /* allcalculatorViewController.swift in Sources */,
+				18A7F4DE2AFCBB2B004A1604 /* InterestViewController.swift in Sources */,
 				18A7F4C82AFCB77E004A1604 /* AppDelegate.swift in Sources */,
 				18A7F4CA2AFCB77E004A1604 /* SceneDelegate.swift in Sources */,
 			);

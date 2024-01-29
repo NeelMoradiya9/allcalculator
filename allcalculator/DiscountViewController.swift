@@ -8,22 +8,44 @@
 import UIKit
 
 class DiscountViewController: UIViewController {
-
+    
+    var discountAmount: Double = 0.0
+    @IBOutlet weak var pricetext: UITextField!
+    
+    
+    @IBOutlet weak var discounttext: UITextField!
+    
+    @IBOutlet weak var afterdiscountlabel: UILabel!
+    
+    @IBOutlet weak var savedamountlabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @IBAction func calculatebutton(_ sender: Any) {
+        if let originalPrice = Double(pricetext.text ?? ""),
+           let discountPercentage = Double(discounttext.text ?? "") {
+            let discount = originalPrice * (discountPercentage / 100)
+            let discountedPrice = originalPrice - discount
+            let savedamount = originalPrice - discountedPrice
+            afterdiscountlabel.text = "Discounted Price: \(String(format: "₹%.2f", discountedPrice))"
+            savedamountlabel.text = "Saved amount: \(String(format: "₹%.2f", savedamount))"
+            discountAmount = discount
+        } else {
+            afterdiscountlabel.text = "Please enter valid input."
+            savedamountlabel.text = "No Saved amoount sorry!"
+        }
     }
-    */
-
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
+    }
+    func dismisskeyboard(){
+        view.endEditing(true)
+    }
+    
 }
+
+
+
+

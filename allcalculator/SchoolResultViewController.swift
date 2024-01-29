@@ -8,22 +8,38 @@
 import UIKit
 
 class SchoolResultViewController: UIViewController {
-
+    
+    @IBOutlet weak var totalmarkstext: UITextField!
+    
+    @IBOutlet weak var yourmarkstext: UITextField!
+    
+    @IBOutlet weak var resultlabel: UILabel!
+    
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+    }
+    @IBAction func calculatebutton(_ sender: Any) {
+        if let totalMarksText = totalmarkstext.text,
+           let yourMarksText = yourmarkstext.text,
+           let totalMarks = Double(totalMarksText),
+           let yourMarks = Double(yourMarksText) {
+            let percentage = (yourMarks / totalMarks) * 100
+            resultlabel.text = String(format: "Percentage: %.2f%%", percentage)
+        } else {
+            resultlabel.text = "Invalid input"
+        }
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
     }
-    */
-
+    func dismisskeyboard(){
+        view.endEditing(true)
+    }
 }
+

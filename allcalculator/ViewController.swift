@@ -11,9 +11,13 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
     }
 
-
+    @IBAction func btn(_ sender: Any) {
+        let x = storyboard?.instantiateViewController(identifier: "allcalculatorViewController")
+        as! allcalculatorViewController
+        navigationController?.pushViewController(x, animated:   true)
+    }
+    
 }
 
