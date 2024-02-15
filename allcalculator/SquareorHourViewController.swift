@@ -23,10 +23,10 @@ class SquareorHourViewController: UIViewController {
     @IBAction func calculatebutton(_ sender: Any) {
         if let inputText = inputnumberstext.text, let inputNumber = Double(inputText) {
             switch segmentbar.selectedSegmentIndex {
-            case 0: // Square Calculation
+            case 0:
                 let result = inputNumber * inputNumber
                 resultlab.text = "Square: \(result)"
-            case 1: // Hour Calculation
+            case 1:
                 let result = inputNumber / 60.0
                 resultlab.text = "Hour: \(result)"
             default:
